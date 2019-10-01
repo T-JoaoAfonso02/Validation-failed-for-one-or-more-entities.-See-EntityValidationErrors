@@ -57,7 +57,7 @@ Exemplo para rastrear erros de Property de objetos e detalhar essa matriz no Vis
         
  -----------------**DEMO 02**-----------------------------
  --
-    Outra opção seria usar o  **((System.Data.Entity.Validation.DbEntityValidationException)$exception).EntityValidationErrors** inserindo no **Quick Watch** ou  **mmediate window**
+    Outra opção seria usar o  **((System.Data.Entity.Validation.DbEntityValidationException)$exception).EntityValidationErrors))** inserindo no **Quick Watch** ou  **mmediate window**
  
  ![Legenda](https://i.imgur.com/g9sjNyQ.png)
     
