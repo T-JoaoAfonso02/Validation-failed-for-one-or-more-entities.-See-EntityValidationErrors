@@ -59,8 +59,8 @@ Exemplo para rastrear erros de Property de objetos e detalhar essa matriz no Vis
  --
     Outra opção seria usar o  **((System.Data.Entity.Validation.DbEntityValidationException)$exception).EntityValidationErrors** inserindo no **Quick Watch** ou  **mmediate window**
  
- 
-     ![Legenda]((https://i.imgur.com/g9sjNyQ.png))	
+ ![Legenda](https://i.imgur.com/g9sjNyQ.png)
+    
  
     No meu caso, veja como sou capaz de expandir o ValidationErrors List dentro da EntityValidationErrorscolections 
  
