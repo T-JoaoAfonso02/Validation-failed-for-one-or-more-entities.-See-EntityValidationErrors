@@ -1,18 +1,19 @@
 # Validation-failed-for-one-or-more-entities.-See-EntityValidationError
 
-
 Exemplo para rastrear erros de Property de objetos e detalhar essa matriz no Visual studio durante a depuração. Mas você também pode capturar a exceção e gravar os erros em algum armazenamento de log ou no console:
-EntityValidationErrors: é uma coleção que representa as entidades que não puderam ser validadas com êxito e a coleção interna. O EntityValidationErrors por entidade é uma lista de erros ha nível de propriedade.
+
+**EntityValidationErrors**: é uma coleção que representa as entidades que não puderam ser validadas com êxito e a coleção interna. O EntityValidationErrors por entidade é uma lista de erros ha nível de propriedade.
  
  Essas mensagens de validação geralmente são úteis o suficiente para encontrar a fonte do problema
- #O valor da propriedade incorreta pode ser incluído no loop interno da seguinte maneira:
+  O valor da propriedade incorreta pode ser incluído no loop interno da seguinte maneira:
  
-   [0] Existem varias formas para rastrear erros de propiedades obrigatorias,
+   h6) Existem varias formas para rastrear erros de propiedades obrigatorias,
    
-   1) -  
- #imgiurl: https://imgbbb.com/image/LR5pyF
+ 
+----------------- **DEMO 01**-----------------------------
 
------------------ code-----------------------------
+[texto](https://i.imgur.com/POdZadh.png)	
+
   private static void Main(string[] args)
         {
             try
@@ -57,11 +58,15 @@ EntityValidationErrors: é uma coleção que representa as entidades que não pu
 
         }
         
-        
-       2)- Basta adicionar a seguinte expressão em uma janela do Quick Watch ou no mmediate window do propip visual studio o seguinte comando.
-((System.Data.Entity.Validation.DbEntityValidationException)$exception).EntityValidationErrors
+ -----------------**DEMO 02**-----------------------------
+Outra opção seria usar o  **((System.Data.Entity.Validation.DbEntityValidationException)$exception).EntityValidationErrors** inserindo no **Quick Watch** ou  **mmediate window**
+ 
+  No meu caso, veja como sou capaz de expandir o ValidationErrors List dentro da EntityValidationErrorscolections 
+  [texto](https://i.imgur.com/g9sjNyQ.png).
+  
+  
+  
 
-    No meu caso, veja como sou capaz de expandir para ValidationErrors List dentro da EntityValidationErrorscolections (img)
-    url-igm - https://imgbbb.com/image/LR5UUC
+  
         
  
