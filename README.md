@@ -13,11 +13,12 @@ Exemplo para rastrear erros de Property de objetos e detalhar essa matriz no Vis
 ----------------- **DEMO 01**-----------------------------
 ![Legenda](https://i.imgur.com/POdZadh.png)	
 
-  private static void Main(string[] args)
+---------------
+private static void Main(string[] args)
         {
-            try
+        try
             {
-                using (var ctx = new Context())
+            using (var ctx = new Context())
                 {
                     var estudante = new alunos()
                     {
@@ -32,11 +33,10 @@ Exemplo para rastrear erros de Property de objetos e detalhar essa matriz no Vis
                         IdInstrutores = 1
                     };
 
-                    ctx.alunos.Include("cursos");
-                    ctx.alunos.Include("instrutores");
-                    ctx.alunos.Add(estudante);
-
-                    ctx.SaveChanges();
+  ctx.alunos.Include("cursos");
+ctx.alunos.Include("instrutores");
+ ctx.alunos.Add(estudante);
+ ctx.SaveChanges();
                 }
                 Console.WriteLine("Dados Inseridos");
                 Console.ReadLine();
@@ -53,8 +53,6 @@ Exemplo para rastrear erros de Property de objetos e detalhar essa matriz no Vis
                     }
                 throw;
             }
-
-
         }
         
  -----------------**DEMO 02**-----------------------------
@@ -64,7 +62,7 @@ Outra opção seria usar o  **((System.Data.Entity.Validation.DbEntityValidation
  
  ![Legenda]((https://i.imgur.com/g9sjNyQ.png))	
  
-  No meu caso, veja como sou capaz de expandir o ValidationErrors List dentro da EntityValidationErrorscolections 
+No meu caso, veja como sou capaz de expandir o ValidationErrors List dentro da EntityValidationErrorscolections 
  
   
   
