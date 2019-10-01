@@ -62,7 +62,7 @@ Exemplo para rastrear erros de Property de objetos e detalhar essa matriz no Vis
  ![Legenda](https://i.imgur.com/g9sjNyQ.png)
     
  
-    No meu caso, veja como sou capaz de expandir o ValidationErrors List dentro da EntityValidationErrorscolections 
+   No meu caso, veja como sou capaz de expandir o **ValidationErrors**   List dentro da  **EntityValidationErrorscolections ** 
  
   
   
