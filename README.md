@@ -33,10 +33,10 @@ private static void Main(string[] args)
                         IdInstrutores = 1
                     };
 
-  ctx.alunos.Include("cursos");
-ctx.alunos.Include("instrutores");
- ctx.alunos.Add(estudante);
- ctx.SaveChanges();
+    ctx.alunos.Include("cursos");
+   ctx.alunos.Include("instrutores");
+    ctx.alunos.Add(estudante);
+    ctx.SaveChanges();
                 }
                 Console.WriteLine("Dados Inseridos");
                 Console.ReadLine();
